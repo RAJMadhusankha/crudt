@@ -110,7 +110,7 @@ jobs:
             echo ">>> Building Frontend for ${PROJECT}"
             PROJECT_DIR="/home/${{ secrets.SSH_USER }}/${PROJECT}"
 
-            cd "${PROJECT_DIR}/client"
+            cd "${PROJECT_DIR}/frontend/curdfront"
 
             npm install
 
