@@ -49,7 +49,7 @@ jobs:
             PROJECT_DIR="/home/${{ secrets.SSH_USER }}/${PROJECT}"
 
             mkdir -p "${PROJECT_DIR}"
-            cd "${PROJECT_DIR}/backend"
+            cd "${PROJECT_DIR}/Backend"
 
             if pm2 describe "${PROJECT}-backend" &>/dev/null; then
               pm2 delete "${PROJECT}-backend" || true
